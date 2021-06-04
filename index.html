@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png" />
+    <link rel="manifest" href="assets/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="assets/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <title>Covid19 Cases Live Updates</title>
+</head>
+
+<body>
+    <header>
+        <h1>COVID-19 CASES LIVE UPDATES</h1>
+    </header>
+    <main class="container">
+        <div class="ymargin cards">
+            <div class="card-item">
+                <strong>Confirmed Cases</strong> <br />
+                <span id="confirmed"></span>
+            </div>
+            <div class="card-item">
+                <strong>Active Cases</strong> <br />
+                <span id="active"></span>
+            </div>
+            <div class="card-item">
+                <strong>Recovered Cases</strong> <br />
+                <span id="recovered"></span>
+            </div>
+            <div class="card-item">
+                <strong>Deaths</strong> <br />
+                <span id="deaths"></span>
+            </div>
+            <div class="card-item">
+                <strong>Recovery Rate</strong> <br />
+                <span id="recovrate"></span>
+            </div>
+            <div class="card-item">
+                <strong>Last Updated</strong> <br />
+                <span id="lastupdate"></span>
+            </div>
+        </div>
+        <div>
+            <strong class="red">* Click on any State for more Information</strong>
+        </div>
+        <div style="overflow-x: auto; margin-bottom: 1.6em">
+            <table border="1" id="dataentry" width="97%"></table>
+        </div>
+        <div id="popup">
+            <div>
+                <div class="pbutton">
+                    <button id="closebtn">
+              <i class="material-icons sharp">close</i>
+            </button>
+                </div>
+                <div class="scrollable">
+                    <div class="pcontainer">
+                        <h3 style="margin-bottom: 5px; font-size: 1.4em">
+                            <span id="pstate"></span>
+                        </h3>
+                        <div class="blue">
+                            <strong> Confirmed Cases :</strong> <span id="pconfirm"></span>
+                        </div>
+                        <div class="blue">
+                            <strong>Active Cases :</strong> <span id="pactive"></span>
+                        </div>
+                        <div class="green">
+                            <strong>Recovered Cases : </strong><span id="precovered"></span>
+                        </div>
+                        <div class="green">
+                            <strong>Recovery Rate :</strong> <span id="prrate"></span>
+                            <span>%</span>
+                        </div>
+                        <div class="red">
+                            <strong>Deaths :</strong> <span id="pdeaths"></span>
+                        </div>
+                        <div class="red">
+                            <strong>Death Rate : </strong><span id="pdrate"></span>
+                            <span>%</span>
+                        </div>
+                    </div>
+                    <div id="citydata"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>Developed by Jaykumar Mandaviya</footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

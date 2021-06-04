@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Signika+Negative:wght@400;600&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+}
+
+body {
+    font-family: "Signika Negative", sans-serif;
+}
+
+img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] {
+    display: none;
+}
+
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: #067f85;
+}
+
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: #067f85;
+}
+
+::-moz-selection {
+    /* Code for Firefox */
+    background: transparent;
+}
+
+::selection {
+    background: transparent;
+}
+
+h1 {
+    font-size: 1.6em;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    cursor: pointer;
+}
+
+table td,
+table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #ddd;
+}
+
+table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #067f85;
+    color: white;
+}
+
+header,
+footer {
+    background-color: #067f85;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+}
+
+.container {
+    width: 95%;
+    margin: auto;
+}
+
+.ymargin {
+    margin-top: 1.6em;
+    margin-bottom: 1.6em;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card-item {
+    cursor: pointer;
+    text-align: center;
+    flex: 30%;
+    margin: 3px;
+    font-size: 1.2em;
+    padding: 15px 0px 15px 0px;
+    border-radius: 10px;
+    color: white;
+    background-color: #067f85;
+    transition: ease-in-out 0.5s;
+}
+
+.card-item:hover {
+    background-color: #05565a;
+}
+
+#popup {
+    position: fixed;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2em;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 25px;
+    border-radius: 10px;
+    min-width: 210px;
+    box-shadow: 2px 2px 23px -2px rgba(0, 0, 0, 0.48);
+    -webkit-box-shadow: 2px 2px 23px -2px rgba(0, 0, 0, 0.48);
+    -moz-box-shadow: 2px 2px 23px -2px rgba(0, 0, 0, 0.48);
+    max-height: 70vh;
+    backdrop-filter: blur(5px);
+}
+
+.pbutton {
+    text-align: right;
+}
+
+.scrollable {
+    max-height: 65vh;
+    padding: 0px 5px 0px 5px;
+    overflow-y: scroll;
+}
+
+.pcontainer {
+    text-align: center;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.citycontainer {
+    background-color: #0096883d;
+    color: #05565a;
+    margin: 16px 0px 8px 0px;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 0.9em;
+}
+
+.citycontainer h4 {
+    font-size: 1.2em;
+    margin-bottom: 6px;
+}
+
+#closebtn {
+    border: none;
+    background-color: transparent;
+    border-radius: 100%;
+    padding: 11px;
+    height: 45px;
+    width: 45px;
+    transition: ease-in-out 0.2s;
+    margin-top: -18px;
+    cursor: pointer;
+}
+
+#closebtn:hover {
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.blue {
+    color: darkblue;
+}
+
+.green {
+    color: darkgreen;
+}
+
+.red {
+    color: #e91010;
+}
+
+@media (max-width: 660px) {
+    .card-item {
+        flex: 80%;
+    }
+}
+
+@media (max-width: 600px) {
+    #popup {
+        width: 80vw;
+    }
+}
+
+@media (max-width: 300px) {
+    #popup {
+        width: 80vw;
+        font-size: 14px;
+    }
+}
